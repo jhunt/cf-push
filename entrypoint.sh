@@ -8,6 +8,7 @@ fi
 
 if [ -z ${INPUT_WORKINGDIR+x} ]; then 
   echo "WORKINGDIR is not set. Staying in Root Dir"; else 
+    echo {INPUT_WORKINGDIR}
     cd {INPUT_WORKINGDIR}
 fi
 #change dir to push only this app
