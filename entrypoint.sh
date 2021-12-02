@@ -6,10 +6,10 @@ if [ "x${INPUT_VALIDATE}" = "xfalse" ]; then
 fi
 #/home/runner/work/cf_python_test_app/cf_python_test_app
 
-if [ -z ${INPUT_WORKINGDIR+x} ]; then 
-  echo "WORKINGDIR is not set. Staying in Root Dir"; else 
-    echo {INPUT_WORKINGDIR}
-    cd {INPUT_WORKINGDIR}
+if [ -z ${INPUT_WORKDIR+x} ]; then 
+  echo "WORKDIR is not set. Staying in Root Dir"; else 
+    echo {INPUT_WORKDIR}
+    cd {INPUT_WORKDIR}
 fi
 #change dir to push only this app
 #cd {INPUT_WORKINGDIR}
