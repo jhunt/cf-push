@@ -26,6 +26,10 @@ inputs:
     description: Whether or not to validate the CF API's TLS certificate
     required: false
     default: true
+  debug:
+    description: Debug your deploy dir
+    required: false
+    default: false
 
 
 
