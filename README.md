@@ -16,7 +16,7 @@ If you're not sure about the used directoy that is created in the docker contain
 
 Create you github action file and only listen to the events in a given folder
 
-``yml
+```yml
 
 name: Deploy to Cloud Foundry
 on:
@@ -41,6 +41,6 @@ jobs:
           password: ${{ secrets.CF_PASSWORD }}
           manifest: manifest.yml
           validate: true          
-``
+```
 
 
