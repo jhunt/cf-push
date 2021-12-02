@@ -19,13 +19,14 @@ inputs:
   space:
     description: The name of the Cloud Foundry space in which to deploy
     required: true
+  workdir:
+    description: Set this parameter if you want to switch the working dir to push an app
+    required: false
   validate:
     description: Whether or not to validate the CF API's TLS certificate
     required: false
     default: true
-  workingdir:
-    description: Set this parameter if you want to switch the working dir to push an app
-    required: false
+
 
 
 runs:
