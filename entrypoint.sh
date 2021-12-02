@@ -6,7 +6,7 @@ if [ "x${INPUT_VALIDATE}" = "xfalse" ]; then
 fi
 #/home/runner/work/cf_python_test_app/cf_python_test_app
 # echo ${INPUT_APPKDIR}
-ls
+ls -R
 if [ -z ${INPUT_APPDIR+x} ]; then 
   echo "WORKDIR is not set. Staying in Root Dir"; else 
     echo ${INPUT_APPDIR}
