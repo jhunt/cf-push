@@ -21,7 +21,7 @@ inputs:
     required: true
   workdir:
     description: Set this parameter if you want to switch the working dir to push an app
-    required: false
+    required: true
   validate:
     description: Whether or not to validate the CF API's TLS certificate
     required: false
