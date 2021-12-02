@@ -4,9 +4,9 @@ inputs:
   manifest:
     description: The path to your CF application manifest
     required: true
-#   workdir:
-#     description: Set this parameter if you want to switch the working dir to push an app
-#     required: true
+  appdir:
+    description: Set this parameter if you want to switch the working dir to push an app
+    required: true
   api:
     description: The Cloud Foundry API endpoint
     required: true
@@ -22,10 +22,10 @@ inputs:
   space:
     description: The name of the Cloud Foundry space in which to deploy
     required: true
-  workdir:
+  validate:
     description: Whether or not to validate the CF API's TLS certificate
     required: false
-#     default: true
+    default: true
 
 
 
