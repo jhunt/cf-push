@@ -1,15 +1,16 @@
 #!/bin/sh
 set -eu
-cf_opts=
-if [ "x${INPUT_VALIDATE}" = "xfalse" ]; then
-  cf_opts="--skip-ssl-validation"
-fi
+# cf_opts= 
+# if [ "x${INPUT_VALIDATE}" = "xfalse" ]; then
+#   cf_opts="--skip-ssl-validation"
+# fi
 #/home/runner/work/cf_python_test_app/cf_python_test_app
+echo ${INPUT_WORKDIR}
 
 if [ -z ${INPUT_WORKDIR+x} ]; then 
   echo "WORKDIR is not set. Staying in Root Dir"; else 
-    echo {INPUT_WORKDIR}
-    cd {INPUT_WORKDIR}
+    echo ${INPUT_WORKDIR}
+    cd ${INPUT_WORKDIR}
 fi
 #change dir to push only this app
 #cd {INPUT_WORKINGDIR}
