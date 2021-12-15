@@ -27,7 +27,7 @@ jobs:
           username: ${{ secrets.CF_USERNAME }}
           password: ${{ secrets.CF_PASSWORD }}
           manifest: manifest.yml
-          validate: true          
+          validate: true          # set to false if you don't want to validate ssl
 ```
 
 ## Further Options
