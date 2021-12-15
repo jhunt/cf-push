@@ -27,7 +27,7 @@ inputs:
     required: false
     default: true
   debug:
-    description: Debug your deploy dir
+    description: Debug your deploy dir to list all folders
     required: false
     default: false
 
